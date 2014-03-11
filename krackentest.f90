@@ -14,36 +14,7 @@
       call samples()
       end
 !=======================================================================--------
-      subroutine samples
-      use M_kracken
-      character*255 valuefeeffe 
-      
-      efefef
-
-! Getting everything before a switch
-      call retrev('mycommand_oo',value,len,ier)
-      write(*,*)'before any switch=',value(:len)
-
-! Getting an integer from -i value
-      call retrev('mycommand_i',value,len,ier)
-      write(*,*)'value for -i =',value(:len)
-      call string_to_real(value,anumber,ier)
-      write(*,*)'divided by 2 is ',int(anumber)/2
-
-! Getting a real number from -r value
-      call retrev('mycommand_r',value,len,ier)
-      write(*,*)'value for -r =',value(:len)
-      call string_to_real(value,anumber,ier)
-      write(*,*)'divided by 2 is ',anumber/2
-
-! Getting a string (with a default) from -par1
-      call retrev('mycommand_par1',value,len,ier)
-      write(*,*)'value for -par1 =',value(:len)
-
-! Getting a string (with no default) from -par2
-      call retrev('mycommand_par2',value,len,ier)
-      write(*,*)'value for -par2 =',value(:len)
-
+     
 ! Getting a string with a multi-word default and splitting it from -par3
       call listem('mycommand_par3','-par3',.true.)
 
