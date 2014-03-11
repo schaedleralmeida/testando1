@@ -16,7 +16,9 @@
 !=======================================================================--------
       subroutine samples
       use M_kracken
-      character*255 value
+      character*255 valuefeeffe 
+      
+      efefef
 
 ! Getting everything before a switch
       call retrev('mycommand_oo',value,len,ier)
