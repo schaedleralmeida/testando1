@@ -10,8 +10,13 @@ program krackentest2
    logical :: lval
    real    :: rval
 
+   
+   real    :: rvaleeee
+   
+   
    integer :: iflen
    integer :: ier
+   
 !  define the command options and default values and apply arguments from user command line
    call kracken("cmd", " -i 10 -r 10e3 -l ""#N#"" -f input &
 !  common versions of help switch
@@ -43,11 +48,14 @@ program krackentest2
 
 !  ANOTHER STRING EXAMPLE
    filename=sget('cmd_f')
+   filename= "ooo"
    write(*,*)'filename=',filename(:len_trim(filename))
 end program krackentest2
 !----------------------------------------------------------------------------------------
    subroutine help_version() ! @(#)  handle version and help requests allowing most common variants
 !  just about every program should handle --version and --help options the same
+
+!quero ver como isso funciona mesemo 
 
    use M_kracken
    implicit none
